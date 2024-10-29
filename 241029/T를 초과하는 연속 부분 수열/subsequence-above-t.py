@@ -7,16 +7,14 @@ arr2 = list(map(int, input().split()))
 
 cnt=0
 m=0
-for i in range(1,n):
-    if(arr2[i-1] <arr2[i]) and arr2[i-1] >t:
+for i in range(n):
+    if arr2[i]>t:
         cnt +=1
-    else:
         m=max(m,cnt)
-        cnt=1
+    else:
+        cnt=0
 
 m=max(m,cnt)
 
-if m == 0 :
-    print(0)
-else:
-    print(m)
+
+print(m)
