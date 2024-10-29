@@ -5,18 +5,18 @@ t=arr[1]
 
 arr2 = list(map(int, input().split()))
 
-cnt=1
-m=1
+cnt=0
+m=0
 for i in range(1,n):
-    if(arr2[i-1] <arr2[i]):
+    if(arr2[i-1] <arr2[i]) and arr2[i-1] >t:
         cnt +=1
     else:
-        if (t<m) :
-            m=max(m,cnt)
+        m=max(m,cnt)
         cnt=1
 
 m=max(m,cnt)
-if m == 1 :
+
+if m == 0 :
     print(0)
 else:
     print(m)
