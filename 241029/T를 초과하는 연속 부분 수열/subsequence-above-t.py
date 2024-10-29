@@ -16,4 +16,7 @@ for i in range(1,n):
         cnt=1
 
 m=max(m,cnt)
-print(m)
+if m == 1 :
+    print(0)
+else:
+    print(m)
