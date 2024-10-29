@@ -9,5 +9,5 @@ for i in range(1,n) :
     else:
         m = max(cnt,m)
         cnt = 1
-
+m = max(cnt,m)
 print(m)
