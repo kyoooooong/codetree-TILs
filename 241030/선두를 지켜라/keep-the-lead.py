@@ -1,43 +1,34 @@
-# 입력 받기
-N, M = map(int, input().split())
-A_moves = [tuple(map(int, input().split())) for _ in range(N)]
-B_moves = [tuple(map(int, input().split())) for _ in range(M)]
+MAX_T = 1000000
 
-# 초기 위치와 변수 설정
-A_pos = B_pos = lead_changes = 0
-A_i = B_i = A_t = B_t = 0
-leader = None
+n, m = tuple(map(int, input().split()))
+pos_a, pos_b = [0] * (MAX_T + 1), [0] * (MAX_T + 1)
 
-# 선두 바뀜 횟수 찾기
-while A_i < N and B_i < M:
-    # 이동할 시간 설정
-    time = min(A_moves[A_i][1] - A_t, B_moves[B_i][1] - B_t)
-    A_pos += A_moves[A_i][0] * time
-    B_pos += B_moves[B_i][0] * time
+time_a = 1
+for _ in range(n):
+    v, t = tuple(map(int, input().split()))
+    for _ in range(t):
+        pos_a[time_a] = pos_a[time_a - 1] + v
+        time_a += 1
 
-    # 현재 선두 판단
-    if A_pos > B_pos:
-        new_leader = 'A'
-    elif B_pos > A_pos:
-        new_leader = 'B'
-    else:
-        new_leader = leader  # 같은 위치일 경우 선두 유지
+time_b = 1
+for _ in range(m):
+    v, t = tuple(map(int, input().split()))
+    for _ in range(t):
+        pos_b[time_b] = pos_b[time_b - 1] + v
+        time_b += 1
 
-    # 선두 변경 확인
-    if new_leader != leader:
-        if leader is not None:  # 첫 번째는 제외
-            lead_changes += 1
-        leader = new_leader
+leader, ans = 0, 0
+for i in range(1, time_a):
+    if pos_a[i] > pos_b[i]:
 
-    # 시간 업데이트 및 이동 종료 확인
-    A_t += time
-    B_t += time
+        if leader == 2:
+            ans += 1
 
-    if A_t == A_moves[A_i][1]:
-        A_i += 1
-        A_t = 0
-    if B_t == B_moves[B_i][1]:
-        B_i += 1
-        B_t = 0
-
-print(lead_changes)
+        leader = 1
+    elif pos_a[i] < pos_b[i]:
+        if leader == 1:
+            ans += 1
+            
+        leader = 2
+        
+print(ans)
