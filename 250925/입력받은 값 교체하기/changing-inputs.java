@@ -8,7 +8,7 @@ public class Main {
         int a = sc.nextInt();
         int b = sc.nextInt();
 
-        System.out.printf("%f %f", b,a);
+        System.out.printf("%d %d", b,a);
 
         
     }
