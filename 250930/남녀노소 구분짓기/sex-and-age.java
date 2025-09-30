@@ -11,13 +11,14 @@ public class Main {
                 System.out.print("MAN");
             } else {
                 System.out.print("BOY");
-            } else {
+            } 
+        } else {
                 if(b>=19) {
                 System.out.print("WOMAN");
             } else {
                 System.out.print("GIRL");
             }
-            }
+            
         }
     }
 }
