@@ -1,23 +1,25 @@
-import java.util.*;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
+        
+        // 변수 선언
+        int a, b, i;
 
-        int c = a;
-        System.out.print(c+" ");
-        while (true) {
-            if(c>=b) {
-                break;
-            }
-            if(c%2==1) {
-                c*=2;
-            } else {
-                c+=3;
-            }
-            System.out.print(c+" ");
+        // 입력
+        a = sc.nextInt();
+        b = sc.nextInt();
+
+        i = a;
+
+        // 출력
+        while(i <= b) {
+            System.out.print(i + " ");
+            if(i % 2 == 1)
+                i *= 2;
+            else
+                i += 3;
         }
     }
 }
