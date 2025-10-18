@@ -6,6 +6,6 @@ public class Main {
         int n = sc.nextInt();
         int m = sc.nextInt();
 
-        System.out.printf("%d d",m,n);
+        System.out.printf("%d %d",m,n);
     }
 }
