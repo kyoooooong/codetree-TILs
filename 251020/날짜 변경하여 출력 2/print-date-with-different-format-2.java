@@ -5,7 +5,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         String m = sc.next();
         String[] arr = m.split("-");
-        System.out.printf("%s.%s.%s",arr[0],arr[1],arr[2]);
+        System.out.printf("%s.%s.%s",arr[2],arr[0],arr[1]);
 
     }
 }
