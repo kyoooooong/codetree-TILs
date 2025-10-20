@@ -10,7 +10,7 @@ public class Main {
         double b = sc.nextDouble();
 
         System.out.println(n);
-        System.out.printf("%.2f",a);
+        System.out.printf("%.2f\n",a);
         System.out.printf("%.2f",b);
     }
 }
