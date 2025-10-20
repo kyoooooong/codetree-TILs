@@ -5,7 +5,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         String m = sc.next();
         String[] arr = m.split(":");
-        arr[0] = int(arr[0]) + 1;
+        arr[0] = Integer.parseInt(arr[0]) + 1;
 
         System.out.printf("%d:%s",arr[0],arr[1]);
     }
