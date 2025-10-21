@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String m = sc.next();
-        char c = m.charAt(0);
+        char a = m.charAt(0);
         if (a=='S') {
             System.out.println("Superior");
         } else if(a=='A') {
