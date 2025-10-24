@@ -8,13 +8,13 @@ public class Main {
         if(a%3==0) {
             System.out.println("YES");
         } else {
-            System.out.print("NO");
+            System.out.println("NO");
         }
 
         if(a%5==0) {
             System.out.println("YES");
         } else {
-            System.out.print("NO");
+            System.out.println("NO");
         }
     }
 }
