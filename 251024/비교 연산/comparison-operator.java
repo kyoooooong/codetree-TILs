@@ -6,11 +6,11 @@ public class Main {
         int A = sc.nextInt();
         int B = sc.nextInt();
 
-        System.out.printf("%d ", (A >= B) ? 1 : 0);
-        System.out.printf("%d ", (A > B) ? 1 : 0);
-        System.out.printf("%d ", (B >= A) ? 1 : 0);
-        System.out.printf("%d ", (B > A) ? 1 : 0);
-        System.out.printf("%d ", (A == B) ? 1 : 0);
-        System.out.printf("%d ", (A != B) ? 1 : 0);
+        System.out.printf("%d \n", (A >= B) ? 1 : 0);
+        System.out.printf("%d \n", (A > B) ? 1 : 0);
+        System.out.printf("%d \n", (B >= A) ? 1 : 0);
+        System.out.printf("%d \n", (B > A) ? 1 : 0);
+        System.out.printf("%d \n", (A == B) ? 1 : 0);
+        System.out.printf("%d \n", (A != B) ? 1 : 0);
     }
 }
