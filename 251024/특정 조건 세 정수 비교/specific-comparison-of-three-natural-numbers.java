@@ -12,6 +12,7 @@ public class Main {
         } else{
             System.out.print("0");
         }
+        System.out.print(" ");
 
         if(A==B==c) {
             System.out.print("1");
