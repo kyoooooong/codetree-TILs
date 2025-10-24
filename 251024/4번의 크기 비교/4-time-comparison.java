@@ -9,9 +9,9 @@ public class Main {
         int d = sc.nextInt();
         int e = sc.nextInt();
 
-        System.out.printf("%d \n", (A > B) ? 1 : 0);
-        System.out.printf("%d \n", (A > c) ? 1 : 0);
-        System.out.printf("%d \n", (A > d)) ? 1 : 0);
-        System.out.printf("%d \n", (A > e) ? 1 : 0);
+        System.out.printf("%d\n", (A > B) ? 1 : 0);
+        System.out.printf("%d\n", (A > c) ? 1 : 0);
+        System.out.printf("%d\n", (A > d) ? 1 : 0);
+        System.out.printf("%d\n", (A > e) ? 1 : 0);
     }
 }
