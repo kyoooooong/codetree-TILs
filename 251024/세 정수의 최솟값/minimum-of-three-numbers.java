@@ -12,7 +12,7 @@ public class Main {
         } else if(B<=A && B<=c) {
             System.out.print(B);
         } else {
-            System.out.print(C);
+            System.out.print(c);
         }
 
     }
