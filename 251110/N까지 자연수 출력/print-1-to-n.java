@@ -6,7 +6,7 @@ public class Main {
         int a = sc.nextInt();
         int cnt=0;
 
-        while(cnt<=a) {
+        while(cnt<a) {
             cnt++;
             
             System.out.printf("%d ",cnt);
