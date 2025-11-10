@@ -5,7 +5,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         
-        for(int i=a;a<=a*5;i+=a) {
+        for(int i=a;i<=a*5;i+=a) {
             System.out.printf("%d ",i);
         }
     }
