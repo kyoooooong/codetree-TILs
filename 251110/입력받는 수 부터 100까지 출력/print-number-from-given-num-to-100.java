@@ -6,7 +6,7 @@ public class Main {
         int a = sc.nextInt();
         
         for(int i=a;i<=100;i++) {
-            System.out.printf("%f ",i);
+            System.out.printf("%d ",i);
         }
     }
 }
