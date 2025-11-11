@@ -8,8 +8,8 @@ public class Main {
         int cnt=0;
 
         while(cnt<a) {
-            System.out.printf("%d ", cnt);
             cnt+=3;
+            System.out.printf("%d ", cnt);
             
             
         }
