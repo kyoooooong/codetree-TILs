@@ -5,7 +5,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
 
-        int cnt=1;
+        int cnt=0;
 
         while(cnt<=a) {
             System.out.printf("%d ", cnt);
