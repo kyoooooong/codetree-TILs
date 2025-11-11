@@ -1,11 +1,14 @@
 import java.util.*;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();   // 첫 번째 정수 입력
-        int b = sc.nextInt();   // 두 번째 정수 입력
+        BigDecimal a = sc.nextBigDecimal();
+        BigDecimal b = sc.nextBigDecimal();
 
-        System.out.printf("%.21f", (double)a / b); // 실수 나눗셈 후 소수점 21자리 출력
+        BigDecimal result = a.divide(b, 20, RoundingMode.DOWN); // 소수점 아래 20자리, 버림
+        System.out.println(result);
     }
 }
