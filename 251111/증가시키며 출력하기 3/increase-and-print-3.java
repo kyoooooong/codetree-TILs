@@ -7,7 +7,7 @@ public class Main {
         int cnt=9;
 
         while(cnt<26) {
-            cnt++=2;
+            cnt+=2;
             
             System.out.printf("%d ", cnt);
         }
