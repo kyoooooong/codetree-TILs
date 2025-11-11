@@ -9,7 +9,7 @@ public class Main {
 
         while(cnt<=a) {
             System.out.printf("%d ", cnt);
-            cnt*=3;
+            cnt+=3;
             
             
         }
