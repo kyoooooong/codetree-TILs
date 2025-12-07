@@ -6,7 +6,7 @@ public class Main {
         int a = sc.nextInt();  // ✅ char 타입으로 수정
         int b = sc.nextInt();
 
-        if (a>=b) {
+        if (b>=a) {
             for(int i=b;i<=a;i++) {
                 System.out.printf("%d ", i);
             }
