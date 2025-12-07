@@ -7,11 +7,11 @@ public class Main {
         int b = sc.nextInt();
 
         if (b>=a) {
-            for(int i=b;i<=a;i++) {
+            for(int i=b;i>=a;i--) {
                 System.out.printf("%d ", i);
             }
         } else {
-            for(int i=a;i<=b;i++) {
+            for(int i=a;i>=b;i--) {
                 System.out.printf("%d ", i);
             }
         }
