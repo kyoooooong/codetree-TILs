@@ -8,7 +8,8 @@ public class Main {
 
         int c = 0;
 
-        while (c<=b) {
+        while (c<b) {
+            c++;
             if (c%b==0) {
                 System.out.print(1);
             } else {
