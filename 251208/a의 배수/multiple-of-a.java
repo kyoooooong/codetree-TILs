@@ -11,9 +11,9 @@ public class Main {
         while (c<b) {
             c++;
             if (c%b==0) {
-                System.out.print(1);
+                System.out.println(1);
             } else {
-                System.out.print(0);
+                System.out.println(0);
             }
         }
     }
